@@ -21,4 +21,4 @@ describe 'The Coffeescript IDE', ->
     expect(browser.text('h1')).to.eq('Welcome to the Coffee IDE')
 
   it 'shows a list of files to edit', ->
-    expect(browser.text('.files a:first-child')).to.eq('testfile.js')
+    expect(browser.text('ul li')).to.eq('testfile.js')
